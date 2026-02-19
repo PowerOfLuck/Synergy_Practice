@@ -73,8 +73,8 @@ def start():
             print(f"Текущая общая стоимость: {price_calculator.total_score} руб.")
 
         elif user_input == 'CPU':
-            cpu_instance = CPU()  # Изменено имя переменной
-            result = cpu_instance.choose_cpu()  # Вызов правильного метода
+            cpu_instance = CPU()  
+            result = cpu_instance.choose_cpu()  
             if result is None:
                 print("Неверный выбор процессора")
                 continue
@@ -84,8 +84,8 @@ def start():
             print(f"Текущая общая стоимость: {price_calculator.total_score} руб.")
 
         elif user_input == 'GPU':
-            gpu_instance = GPU()  # Изменено имя переменной
-            result = gpu_instance.choose_gpu()  # Вызов правильного метода
+            gpu_instance = GPU()  
+            result = gpu_instance.choose_gpu()  
             if result is None:
                 print("Неверный выбор видеокарты")
                 continue
@@ -94,6 +94,6 @@ def start():
             print(f"Добавлена видеокарта {name} стоимостью {score} руб.")
             print(f"Текущая общая стоимость: {price_calculator.total_score} руб.")
 
-# Запуск программы
 if __name__ == "__main__":
+
     start()
